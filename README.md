@@ -1,7 +1,9 @@
-# EDAN40_Chatterbox
+# Eliza /ChatterBot modificado
+## Introducción
+Eliza es un chatbot básico que permite la interacción del usuario mediante la entrada de texto, en este proyecto se modificó una versión de eliza realizado en Haskell, al cual se le implementan las funcionalidades de aprender nuevas preguntas con sus respectivas respuestas y que estos cambios pudieran permanecer mediante la lectura y escritura de un archivo dentro de la computadora cada vez que se crea una nueva pregunta.
+## Desarrollo
+Como código base se usó el proyecto que se encuentra en el siguiente repositorio: 
+https://github.com/devurc/Eliza-Chatterbox.git 
+El cual tiene la ventaja de que tiene todo modulado, para facilitar la comprensión del proyecto.
+Este proyecto usa una variable que es el que contiene las reglas de eliza, el cual es usado dentro del método, que dado a que está en una función IO nos permite cargar archivos y usar otras funciones de tipo IO, cada vez que se realiza una pregunta se carga el archivo generado en la variable juan y sea crea una variable brain con esos datos, a su vez, si la pregunta es “a darle atomos” se procede a entrenar a eliza, es decir, cargar nuevas preguntas con sus respuestas
 
-One of the most famous programs in the history of artificial intelligence is Joseph Weizenbaum's program Eliza. Written in the early sixties it emulates, or parodies, a Rogerian psychoanalyst who tries to make the patient talk about his or her deepest feelings by turning everything said into a question. Eliza's fame is due to the remarkable observation that many people found her seem so friendly and understanding. In fact some said she was the first analyst they had met who really listened.
-
-Over the years Eliza has had many successors and the phenomenon she represents is now known as a chatterbot. A chatterbot is a program that attempts to simulate typed conversation, with the aim of at least temporarily fooling a human into thinking they are talking to another person.
-
-Chatterbox is a simple Eliza-like project I completed while I was studying at Lund University, taking EDAN40 - Functional Programming. I developed the logic for the input data preparation, pattern matching, and result transformation. It is written in Haskell, and can be run simply from the command line on a system with Haskell GHC installed.
